@@ -100,8 +100,8 @@ def check_cvs_then_email(url, xpath, city_list, to_address):
 # CVS Variables
 url = 'https://www.cvs.com/immunizations/covid-19-vaccine'
 va_xpath_full = '/html/body/content/div/div/div/div[3]/div/div/div[2]/div/div[5]/div/div/div/div/div/div[1]/div[2]/div/div[2]/div/div/div/div/div[2]/ul/li[19]/div/a/span'
-va_close_cities = ['list', 'of', 'cities', 'here']
+va_close_cities = ['LIST', 'OF', 'CITIES', 'HERE']
 
 # Check for vaccines and email results
-toaddrs = ['Recipient Email Address Here']
+toaddrs = ['RECIPIENT EMAIL ADDRESS HERE']
 check_cvs_then_email(url, va_xpath_full, va_close_cities, toaddrs)
