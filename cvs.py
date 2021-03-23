@@ -1,11 +1,11 @@
 import time
+import smtplib
 import pandas as pd
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
-import smtplib
 
 def parse_tag_list(tag_list):
     """Parse list of html tags"""
