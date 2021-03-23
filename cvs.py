@@ -59,7 +59,7 @@ def check_cvs_then_email(url, xpath, city_list, to_address):
     options.headless = True
     driver = webdriver.Chrome(path, options=options)
     driver.get(url)
-    wait = WebDriverWait(driver, 10)
+    driver.implicitly_wait(10)
     state = driver.find_element_by_xpath(xpath).click()
     response = driver.page_source
     driver.quit()
